@@ -1,2 +1,2 @@
 # sigmacloud
-React App
+React Application
