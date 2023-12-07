@@ -10,7 +10,7 @@ const DefaultFooterTemplate = () => {
 			</FooterLeft>
 			<FooterRight className='text-zinc-500'>
 				<span>
-					<b>- Sigma Health Pro -</b>
+					<b>Sigma Health Pro</b>
 				</span>
 			</FooterRight>
 		</Footer>
