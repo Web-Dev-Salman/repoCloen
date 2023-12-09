@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Aside, { AsideBody, AsideFooter, AsideHead } from '../../../components/layouts/Aside/Aside';
 import LogoAndAsideTogglePart from './_parts/LogoAndAsideToggle.part';
 import DarkModeSwitcherPart from './_parts/DarkModeSwitcher.part';
@@ -14,15 +14,13 @@ import Badge from '../../../components/ui/Badge';
 import UserTemplate from '../User/User.template';
 
 const DefaultAsideTemplate = () => {
-	const navigate = useNavigate();
-
 	return (
 		<Aside>
 			<AsideHead>
 				<LogoAndAsideTogglePart />
 			</AsideHead>
 			<AsideBody>
-				<Nav>
+				<Nav className='font-[SecondFamily]'>
 					{/* dashboard */}
 					<NavItem {...appPages.salesAppPages.subPages.salesDashboardPage} />
 					{/* enrollment */}
@@ -94,15 +92,7 @@ const DefaultAsideTemplate = () => {
 						to={appPages.projectAppPages.to}
 						icon={appPages.projectAppPages.icon}>
 						<NavItem {...appPages.projectAppPages.subPages.projectDashboardPage}>
-							<NavButton
-								title='New Project'
-								icon='HeroPlusCircle'
-								onClick={() => {
-									navigate(
-										`../${appPages.projectAppPages.subPages.projectBoardPageLink.to}/new`,
-									);
-								}}
-							/>
+							<NavButton title='Add New' icon='HeroPlusCircle' />
 						</NavItem>
 						<NavItem {...appPages.projectAppPages.subPages.projectBoardPage}>
 							<Badge

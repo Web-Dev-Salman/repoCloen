@@ -198,15 +198,15 @@ export const appPages = {
 		},
 	},
 	projectAppPages: {
-		id: 'projectApp',
-		to: '/project',
+		id: 'SiteManagement',
+		to: '/sitemanagement',
 		text: 'Site Management',
 		icon: 'HeroClipboardDocumentCheck',
 		subPages: {
 			projectDashboardPage: {
-				id: 'projectDashboardPage',
-				to: '/project/dashboard',
-				text: 'Projects Dashboard',
+				id: 'SiteManagement',
+				to: '/site-management',
+				text: 'Site Management',
 				icon: 'HeroClipboardDocumentCheck',
 			},
 			projectBoardPage: {
