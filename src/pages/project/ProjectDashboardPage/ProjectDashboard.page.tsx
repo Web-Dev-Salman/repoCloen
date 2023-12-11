@@ -8,11 +8,6 @@ import {
 import Table, { TBody, Td, TFoot, Th, THead, Tr } from '../../../components/ui/Table';
 import Card, { CardBody } from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
-import Dropdown, {
-	DropdownItem,
-	DropdownMenu,
-	DropdownToggle,
-} from '../../../components/ui/Dropdown';
 import Checkbox, { CheckboxGroup } from '../../../components/form/Checkbox';
 
 type Person = {
@@ -197,5 +192,4 @@ const SiteManagement = () => {
 		</Card>
 	);
 };
-
 export default SiteManagement;
